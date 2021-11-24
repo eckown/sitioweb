@@ -31,8 +31,6 @@ li,h1,h2,h3{
 .navegacion a.activa{
     color: hotpink;
 }
-.contentfoto{
-}
 .wtg1{
     display: flex;
     align-items: center;
