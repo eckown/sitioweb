@@ -69,14 +69,16 @@ body{
     width: 150px;
     height: 150px;
 }
-.wt3{
-    height: 210px;
-    text-align: center;
+.wtg1{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
-.wt3{
+.wtg1 a{
+    padding: 15px 25px;
+}
+.wtg1{
     grid-area: wt3;
 }
 .footer{
