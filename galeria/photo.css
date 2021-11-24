@@ -7,6 +7,9 @@ a {
     color: aliceblue;
     text-decoration: none;
 }
+a:hover{
+    color: hotpink; 
+}
 ul{
     list-style: none;
 }
@@ -26,7 +29,7 @@ li,h1,h2,h3{
     font-weight: 700;
 }
 .navegacion a.activa{
-    color: palevioletred;
+    color: hotpink;
 }
 .contentfoto{
 }
@@ -44,6 +47,9 @@ li,h1,h2,h3{
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+.footer,.wtg1 a{
+    font-weight: 700;
 }
 .contenido{
     width: 90%;

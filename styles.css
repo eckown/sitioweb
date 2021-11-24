@@ -77,6 +77,7 @@ body{
 }
 .wtg1 a{
     padding: 15px 25px;
+    font-weight: 700;
 }
 .wtg1{
     grid-area: wt3;
@@ -86,7 +87,9 @@ body{
     text-align: center;
     grid-area: footer;
 }
-
+.footer p{
+    font-weight: 700;
+}
 /*Carrousell*/
 .contitem{
     height: 90%;
