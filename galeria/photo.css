@@ -58,7 +58,7 @@ li,h1,h2,h3{
     position: relative;
     width: 100%;
     opacity: 0;
-    transition: opacity 0.5s linear 1s;
+    transition: opacity 1.5s linear 1s;
 }
 .grid.img-load{
     opacity: 1;
