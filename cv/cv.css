@@ -48,7 +48,7 @@ body{
     backdrop-filter: blur(1.5px);
 }
 .contenedor-tar .tarjeta{
-    transition: all 400ms ease;
+    transition: all 400ms ease-in;
 }
 .contenedor-tar .tarjeta:hover{
     transform: translateY(-15px); 
