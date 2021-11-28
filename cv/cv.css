@@ -18,7 +18,7 @@ body{
 
 }
 .contenedor{
-    max-height: 100vh;
+    height: 100vh;
     width: 90%;
     margin: auto;
 }
@@ -66,12 +66,12 @@ body{
     transform: translateY(0px);
     opacity: 1; 
 }
-.contenedor-tar .tarjeta .informacion a{
+.contenedor-tar .tarjeta .informacion button{
     transform: translateY(100px);
     opacity: 0;
     transition: 0.5s;
 }
-.contenedor-tar .tarjeta:hover .informacion a{
+.contenedor-tar .tarjeta:hover .informacion button{
     transform: translateY(0px);
     opacity: 1; 
 }
@@ -94,7 +94,7 @@ body{
     font-size: 1em;
     font-weight: 400;
 }
-.contenedor-tar .tarjeta .informacion a{
+.contenedor-tar .tarjeta .informacion button{
     position: relative;
     display: inline-block;
     padding: 8px 20px;
@@ -121,4 +121,105 @@ body{
 }
 .footer p{
     font-weight: 700;
+}
+
+
+.nodalcontainer{
+    background-color: rgba(14, 0, 8, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.show{
+    pointer-events: all;
+    opacity: 1;
+    z-index: 10000;
+}
+
+.informacion{
+    position: relative;
+
+}
+.btn{
+    background: none;
+    font-size: 20px;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 2px;
+    top: 0px;
+    z-index: 10000;
+}
+
+.cont-tarje-leer{
+    width: 90%;
+    max-width: 500px;
+    margin: 50px auto;
+}
+.tarj-leer{
+    box-shadow: 20px 20px 50px rgba(0, 0, 0 , 0.5);
+    border-radius: 15px;
+    background:rgba(27, 27, 27, 0.39);
+    border-top: 1px solid rgba(255, 255, 255 , 0.5);
+    border-left: 1px solid rgba(255, 255, 255 , 0.5);
+    backdrop-filter: blur(5px);
+    margin: 40px 0;
+    padding: 15px;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1000;
+}
+.info-leer{
+    text-align: center;
+    overflow: hidden;
+    padding: 15px 0;
+    z-index: 1000;
+    position: relative;
+}
+.info-leer .informacion{
+    width: 100%;
+}
+.info-leer .informacion article{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.info-leer .informacion article .presentacion{
+    width: 100%;
+    left: 100%;
+    padding: 10px 30px;
+    position: absolute;
+}
+.info-leer .informacion article .presentacion p{
+    text-align: justify;
+}
+
+.info-leer .flecha-info{
+    font-size: 35px;
+    line-height: 35px;
+    color: aliceblue;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.info-leer .flecha-info:hover{
+    color: hotpink;
+}
+.info-leer .flecha-info .anterior{
+    left: 20px;
+}
+.info-leer .flecha-info .siguiente{
+    right: 20px;
 }
